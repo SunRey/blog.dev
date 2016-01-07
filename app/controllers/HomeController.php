@@ -45,7 +45,7 @@ class HomeController extends BaseController {
 		if($guess == '') {
         	return 'Please guess a number';
     	} else {
-        	$random = mt_rand(1, 20);
+        	$random = mt_rand(1, 6);
         	$data = ['guess' => $guess, 'random' => $random];
         	return View::make('roll-dice')->with($data);
     	}
