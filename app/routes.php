@@ -11,7 +11,12 @@
 |
 */
 
-Route::get('/', function()
-{
-	return View::make('hello');
-});
+Route::get('/', 'HomeController@sayHello');
+
+Route::get('/portfolio', 'HomeController@showPortfolio');
+
+Route::get('/resume', 'HomeController@showResume');
+
+Route::get('/sayhello/{name?}', 'HomeController@myFirstView');
+
+Route::get('/roll-dice/{guess?}', 'HomeController@rollDice');
