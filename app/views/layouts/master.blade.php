@@ -5,8 +5,12 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title></title>
-        <link rel="stylesheet" href="{{asset("vendor\zurb\foundation\dist\foundation.css")}}">
+        <!-- Compressed CSS -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/foundation/6.1.1/foundation.min.css">
 
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+        <!-- Compressed JavaScript -->
+        <script src="https://cdn.jsdelivr.net/foundation/6.1.1/foundation.min.js"></script>
         @yield('top-script')
     </head>
     <body>
@@ -14,8 +18,6 @@
         
         @yield('content')
 
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
         
         @yield('bottom-script')
 
