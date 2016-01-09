@@ -5,22 +5,23 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title></title>
-        <!-- Compressed CSS -->
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/foundation/6.1.1/foundation.min.css">
+        <link rel="stylesheet" href="/bower_components/bootstrap/dist/css/bootstrap.min.css">
 
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-        <!-- Compressed JavaScript -->
-        <script src="https://cdn.jsdelivr.net/foundation/6.1.1/foundation.min.js"></script>
         @yield('top-script')
     </head>
     <body>
         @include('partials.nav-bar')
         
-        @yield('content')
+        <div class="container">
+            @yield('content')
+        </div>
+        
+        @include('partials.footer')
 
+        <script src="/bower_components/jquery/dist/jquery.min.js"></script>
+        <script src="/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
         
         @yield('bottom-script')
 
-        @include('partials.footer')
     </body>
 </html>

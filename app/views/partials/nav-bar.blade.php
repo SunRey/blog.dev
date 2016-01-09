@@ -1,26 +1,23 @@
-<div class="title-bar" data-responsive-toggle="main-menu" data-hide-for="medium">
-  <button class="menu-icon" type="button" data-toggle></button>
-  <div class="title-bar-title">Menu</div>
-</div>
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#"><img src="/Brand@0,25x.png"></a>
+    </div>
 
-<div class="top-bar" id="main-menu">
-  <div class="top-bar-left">
-    <ul class="dropdown menu" data-dropdown-menu>
-      <li class="menu-text">Site Title</li>
-    </ul>
-  </div>
-  <div class="top-bar-right">
-    <ul class="menu vertical medium-horizontal" data-responsive-menu="drilldown medium-dropdown">
-      <li class="has-submenu">
-        <a href="#">One</a>
-        <ul class="submenu menu vertical" data-submenu>
-          <li><a href="#">One</a></li>
-          <li><a href="#">Two</a></li>
-          <li><a href="#">Three</a></li>
-        </ul>
-      </li>
-      <li><a href="#">Two</a></li>
-      <li><a href="#">Three</a></li>
-    </ul>
-  </div>
-</div>
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav navbar-right">
+        <li class="active"><a href="#">Resume <span class="sr-only">(current)</span></a></li>
+        <li><a href="#">Portfolio</a></li>
+      </ul>
+      
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
