@@ -33,13 +33,20 @@ class PostsController extends \BaseController {
 	 */
 	public function store()
 	{
-		$post = new Post();
-		$post->title = Input::get('title');
-		$post->description = Input::get('description');
-		$post->user_id = Input::get('user_id', 1);
+		$validator = Validator::make(Input::all(), Post::$rules);
+		if ($validator->fails()) {
+			return Redirect::back()->withInput()->withErrors($validator);
+		} else {
 
-		$post->save();
-		return View::make('posts.index', array('posts' => $posts));
+			$post = new Post();
+			$post->title = Input::get('title');
+			$post->description = Input::get('description');
+			$post->user_id = 1;
+
+			$post->save();
+
+			return Redirect::action('posts.index');
+		}
 	}
 
 
@@ -65,7 +72,6 @@ class PostsController extends \BaseController {
 	public function edit($id)
 	{
 		$post = Post::find($id);
-		var_dump($post);
 
 		return View::make('posts.edit', array('post' => $post));
 	}
@@ -78,17 +84,20 @@ class PostsController extends \BaseController {
 	 * @param  int  $id
 	 * @return Response
 	 */
-	public function update()
-	{
-		$post = Post::find(Input::get('id'));
+	public function update($id)
+	{	
+		if(Input::get('cancel')) {
+			return Redirect::action('posts.index');
+		}
+
+		$post = Post::find($id);
 
 		$post->title = Input::get('title');
 		$post->description = Input::get('description');
 
 		$post->save();
-		$posts = Post::all();
 
-		return View::make('posts.index', array('posts' => $posts));
+		return Redirect::action('posts.index');
 
 		// return "update the post with the id of $id";
 	}
@@ -102,7 +111,10 @@ class PostsController extends \BaseController {
 	 */
 	public function destroy($id)
 	{
-		return "destroy the post with the id of $id";
+		$post = Post::find($id);
+		$post->delete();
+
+		return Redirect::action('posts.index');
 	}
 
 
