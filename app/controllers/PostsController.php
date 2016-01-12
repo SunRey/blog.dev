@@ -10,7 +10,7 @@ class PostsController extends \BaseController {
 	public function index()
 	{
 		$posts = Post::all();
-		
+
 		return View::make('posts.index', array('posts' => $posts));
 	}
 
@@ -38,7 +38,8 @@ class PostsController extends \BaseController {
 		$post->description = Input::get('description');
 		$post->user_id = Input::get('user_id', 1);
 
-		$result = $post->save();
+		$post->save();
+		return View::make('posts.index', array('posts' => $posts));
 	}
 
 
@@ -50,7 +51,8 @@ class PostsController extends \BaseController {
 	 */
 	public function show($id)
 	{
-		return "show the post with the id of $id";
+		$post = Post::find($id);
+		return View::make('posts.show', array('post' => $post));
 	}
 
 
@@ -62,8 +64,12 @@ class PostsController extends \BaseController {
 	 */
 	public function edit($id)
 	{
-		return "show the edit form with the id of $id";
+		$post = Post::find($id);
+		var_dump($post);
+
+		return View::make('posts.edit', array('post' => $post));
 	}
+		// return "show the edit form with the id of $id";
 
 
 	/**
@@ -72,9 +78,19 @@ class PostsController extends \BaseController {
 	 * @param  int  $id
 	 * @return Response
 	 */
-	public function update($id)
+	public function update()
 	{
-		return "update the post with the id of $id";
+		$post = Post::find(Input::get('id'));
+
+		$post->title = Input::get('title');
+		$post->description = Input::get('description');
+
+		$post->save();
+		$posts = Post::all();
+
+		return View::make('posts.index', array('posts' => $posts));
+
+		// return "update the post with the id of $id";
 	}
 
 
