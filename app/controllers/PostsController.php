@@ -9,7 +9,7 @@ class PostsController extends \BaseController {
 	 */
 	public function index()
 	{
-		$posts = Post::all();
+		$posts = Post::orderBy('created_at', 'desc')->paginate(3);
 
 		return View::make('posts.index', array('posts' => $posts));
 	}
@@ -85,19 +85,21 @@ class PostsController extends \BaseController {
 	 * @return Response
 	 */
 	public function update($id)
-	{	
-		if(Input::get('cancel')) {
+	{
+		$validator = Validator::make(Input::all(), Post::$rules);
+
+		if ($validator->fails()) {
+			return Redirect::back()->withInput()->withErrors($validator);
+		} else {
+
+			$post = Post::find($id);
+			$post->title = Input::get('title');
+			$post->description = Input::get('description');
+
+			$post->save();
+
 			return Redirect::action('posts.index');
 		}
-
-		$post = Post::find($id);
-
-		$post->title = Input::get('title');
-		$post->description = Input::get('description');
-
-		$post->save();
-
-		return Redirect::action('posts.index');
 
 		// return "update the post with the id of $id";
 	}
