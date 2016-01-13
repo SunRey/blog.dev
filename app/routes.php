@@ -22,3 +22,12 @@ Route::get('/sayhello/{name?}', 'HomeController@myFirstView');
 Route::get('/roll-dice/{guess?}', 'HomeController@rollDice');
 
 Route::resource('/posts', 'PostsController');
+
+Route::get('orm-test', function() 
+{
+    $post = Post::find(8);
+    
+    $post->delete();
+
+    return Redirect::action('posts.index');
+});
