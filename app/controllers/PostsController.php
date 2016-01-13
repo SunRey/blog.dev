@@ -33,20 +33,9 @@ class PostsController extends \BaseController {
 	 */
 	public function store()
 	{
-		$validator = Validator::make(Input::all(), Post::$rules);
-		if ($validator->fails()) {
-			return Redirect::back()->withInput()->withErrors($validator);
-		} else {
+		$post = new Post();
 
-			$post = new Post();
-			$post->title = Input::get('title');
-			$post->description = Input::get('description');
-			$post->user_id = 1;
-
-			$post->save();
-
-			return Redirect::action('posts.index');
-		}
+		return $this->validateAndSave($post);
 	}
 
 
@@ -59,6 +48,11 @@ class PostsController extends \BaseController {
 	public function show($id)
 	{
 		$post = Post::find($id);
+
+		if(!$post) {
+			return Redirect::action('PostsController@index');
+		}
+
 		return View::make('posts.show', array('post' => $post));
 	}
 
@@ -73,6 +67,10 @@ class PostsController extends \BaseController {
 	{
 		$post = Post::find($id);
 
+		if(!$post) {
+			return Redirect::action('PostsController@index');
+		}
+
 		return View::make('posts.edit', array('post' => $post));
 	}
 		// return "show the edit form with the id of $id";
@@ -86,24 +84,41 @@ class PostsController extends \BaseController {
 	 */
 	public function update($id)
 	{
+		$post = Post::find($id);
+
+		return $this->validateAndSave($post);
+	}
+
+	/**
+	 * Validate Inputs against rules, return errors
+	 *
+	 * @param  int  $post
+	 * @return Saves and responds with view
+	 */
+	protected function validateAndSave($post)
+	{
 		$validator = Validator::make(Input::all(), Post::$rules);
 
 		if ($validator->fails()) {
 			return Redirect::back()->withInput()->withErrors($validator);
 		} else {
 
-			$post = Post::find($id);
 			$post->title = Input::get('title');
 			$post->description = Input::get('description');
+			$post->user_id = User::all()->random();
 
-			$post->save();
+
+			$result = $post->save();
+
+			if($result) {
+				return Redirect::action('PostsController@show', $post->id);
+			} else {
+				return Redirect::back()->withInput();
+			}
 
 			return Redirect::action('posts.index');
 		}
-
-		// return "update the post with the id of $id";
 	}
-
 
 	/**
 	 * Remove the specified resource from storage.
