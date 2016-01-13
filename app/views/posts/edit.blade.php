@@ -5,20 +5,22 @@
         <ol class="breadcrumb">
             <li><a href="{{{ action('PostsController@index') }}}">All Posts</a></li>
         </ol>
-        <form method='POST' action="{{{ action('PostsController@update', $post['id']) }}}">
-            <input type='hidden' name='_method' value='PUT'>
+        {{ Form::model($post, ['action' => ['PostsController@update', $post->id], 'method' => 'PUT']) }}
             <div class="form-group">
-                <label for="title">Your post title</label>
-                <input type="text" name='title' class="form-control" id="title" placeholder=""
-                value="{{{ $post->title }}}">
+                {{ $errors->first('title', '<span class="help-block">:message</span>') }}
+                {{ Form::label('title', 'Your post title') }}
+                {{ Form::text('title', $post->title, ['class' => 'form-control', 'id' => 'title']) }}
             </div>
             <div class="form-group">
-                <label for="description">Blog Entry</label>
-                <textarea name='description' class="form-control">{{{ $post->description }}}</textarea>
+                {{ $errors->first('description', '<span class="help-block">:message</span>') }}
+                {{ Form::label('description', 'Your post entry') }}
+                {{ Form::textarea('description', $post->description, ['class' => 'form-control', 'id' => 'description']) }}
             </div>
             <button type="submit" class="btn btn-primary">Submit</button>
-            <button type="reset" class="btn btn-danger">Reset</button>
-            <a class="btn btn-warning" href="{{{ action('PostsController@show', $post->id) }}}">Cancel</a>
-        </form>
+            <a class="btn btn-warning" href="{{ action('PostsController@show', $post->id) }}">Cancel</a>
+        {{ Form::close() }}
+        {{ Form::open(['action' => ['PostsController@destroy', $post->id], 'method' => 'DELETE'])}}
+            <button class='btn btn-danger'>DELETE</button>
+        {{ FORM::close() }}
     </div>
 @stop
