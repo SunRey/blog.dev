@@ -19,8 +19,5 @@
             <button type="submit" class="btn btn-primary">Submit</button>
             <a class="btn btn-warning" href="{{ action('PostsController@show', $post->id) }}">Cancel</a>
         {{ Form::close() }}
-        {{ Form::open(['action' => ['PostsController@destroy', $post->id], 'method' => 'DELETE'])}}
-            <button class='btn btn-danger'>DELETE</button>
-        {{ FORM::close() }}
     </div>
 @stop

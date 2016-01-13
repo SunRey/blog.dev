@@ -11,9 +11,12 @@
                 </div>
             </div>
         </div>
-        <ol class="breadcrumb pull-right">
+        <ol class="breadcrumb">
             <li><a href="{{{ action('PostsController@index') }}}">All Posts</a></li>
             <li><a href="{{{ action('PostsController@edit', $post->id) }}}">Edit Post</a></li>
         </ol>
+        {{ Form::open(['action' => ['PostsController@destroy', $post->id], 'method' => 'DELETE'])}}
+            <button class='btn btn-danger'>DELETE</button>
+        {{ FORM::close() }}
     </div>
 @stop
