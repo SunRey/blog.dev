@@ -1,8 +1,6 @@
-<!doctype html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<title>Laravel PHP Framework</title>
+@extends('layouts.master')
+
+@yield('top-script')
 	<style>
 		@import url(//fonts.googleapis.com/css?family=Lato:700);
 
@@ -32,11 +30,11 @@
 			margin: 16px 0 0 0;
 		}
 	</style>
-</head>
-<body>
+@stop
+
+@section('content')
 	<div class="welcome">
-		<a href="#" title="Jonathan S Reyes"><img src="/white_logo.jpg" alt="JSR.Blog"></a>
+		<a href="{{{ action('PostsController@index') }}}" title="Jonathan S Reyes"><img class='img-responsive' src="/white_logo.jpg" alt="JSR.Blog"></a>
 		<h1>Hello, this is {{{ $name }}}'s MVC Blog!!!</h1>
 	</div>
-</body>
-</html>
+@stop
