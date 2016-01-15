@@ -1,40 +1,25 @@
 @extends('layouts.master')
 
-@yield('top-script')
-	<style>
-		@import url(//fonts.googleapis.com/css?family=Lato:700);
-
-		body {
-			margin:0;
-			font-family:'Lato', sans-serif;
-			text-align:center;
-			color: #999;
-		}
-
-		.welcome {
-			width: 300px;
-			height: 200px;
-			position: absolute;
-			left: 50%;
-			top: 50%;
-			margin-left: -150px;
-			margin-top: -100px;
-		}
-
-		a, a:visited {
-			text-decoration:none;
-		}
-
-		h1 {
-			font-size: 32px;
-			margin: 16px 0 0 0;
-		}
-	</style>
-@stop
-
 @section('content')
-	<div class="welcome">
-		<a href="{{{ action('PostsController@index') }}}" title="Jonathan S Reyes"><img class='img-responsive' src="/white_logo.jpg" alt="JSR.Blog"></a>
-		<h1>Hello, this is {{{ $name }}}'s MVC Blog!!!</h1>
-	</div>
+    <header>
+        <div class="header-content">
+            <div class="header-content-inner">
+                <h1>Hello, this is {{{ $name }}}'s MVC Blog!!!</h1>
+                <hr>
+                <p>This site uses the frameworks Laravel, on the back-end, and Bootstrap, on the front-end, to implement a MVC design patter as part of my learning experience at Codeup. Thank you for visiting </p>
+                <a href="#about" class="btn btn-primary btn-xl page-scroll">Find Out More</a>
+            </div>
+        </div>
+    </header>
+    <aside class="bg-dark">
+        <div class="container text-center">
+            <div class="call-to-action">
+                <h2>Free Download at Start Bootstrap!</h2>
+                <a href="#" class="btn btn-default btn-xl wow tada">Download Now!</a>
+            </div>
+        </div>
+    </aside>
 @stop
+{{-- 	<div class="welcome">
+		<a href="{{{ action('PostsController@index') }}}" title="Jonathan S Reyes"><img class='img-responsive' src="/white_logo.jpg" "></a>
+	</div> --}}
