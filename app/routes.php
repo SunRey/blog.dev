@@ -21,7 +21,15 @@ Route::get('/sayhello/{name?}', 'HomeController@myFirstView');
 
 Route::get('/roll-dice/{guess?}', 'HomeController@rollDice');
 
+Route::get('/posts/manage', 'PostsController@managePosts');
+
 Route::resource('/posts', 'PostsController');
+
+Route::get('login', 'HomeController@getLogin');
+Route::post('login', 'HomeController@postLogin');
+Route::get('logout', 'HomeController@getLogout');
+
+Route::resource('tags', 'TagsController');
 
 Route::get('orm-test', function() 
 {
