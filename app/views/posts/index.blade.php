@@ -18,7 +18,10 @@
             <ol class="breadcrumb">
                 <li><a href="{{{ action('PostsController@create') }}}">Create New Posts</a></li>
                 <li>
-                    <input name='search' placeholder='Search by Title or email'>
+                    <form action='#'>
+                        <input name='search' placeholder='Search by Title or email'>
+                        <button type='submit' class='btn btn-primary'>Submit</button>
+                    </form>
                 </li>
             </ol>
     </main>

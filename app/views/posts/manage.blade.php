@@ -15,10 +15,13 @@
             </thead>
             <tbody>
                 <tr ng-repeat='post in posts'>
-                    <td >@{{ post['title'] }}</td>
-                    <td>@{{ post.user['first_name'] }}</td>
-                    <td>@{{ post.user.created_at['date'] }}</td>
-                    <td>@{{ post }}</td>
+                    <td ><a href="{{{ action('PostsController@index') }}}" >@{{ post.title }}</a></td>
+                    <td>@{{ post.user.first_name }}</td>
+                    <td>@{{ post.user.created_at.date }}</td>
+                    <td>@{{ post.user.updated_at.date }}</td>
+                    <td>
+                        <form action='POST' ></form>
+                    </td>
                     </tr>
             </tbody>
         </table>

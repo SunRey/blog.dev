@@ -19,11 +19,15 @@ class PostsController extends \BaseController {
 		$query = Post::with('user'); //query builder
 
 		if(Input::has('search')) {
-			$query->where('title', 'like', '%' . Input::get('search') . '%');
-			$query->orWhere('body', 'like', '%');
-
+			$search = Input::get('search');
+			$query->where('title', 'like', '%' . $search . '%');
+			$query->orWhere('description', 'like', '%' . $search . '%');
 			$query->orWhereHas('user', function($q) {
-				$q->where('email', 'like', '%');
+				$search = Input::get('search');
+				$q->where('email', 'like', '%' . $search . '%');
+				$q->orWhere('first_name', 'like', '%' . $search . '%' );
+				$q->orWhere('last_name', 'like', '%' . $search . '%');
+
 			});
 		}
 

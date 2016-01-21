@@ -1,4 +1,4 @@
-<nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
+<nav id="mainNav" class="navbar navbar-inverse navbar-fixed-top">
   <div class="container-fluid">
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
@@ -15,10 +15,10 @@
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav navbar-right">
         <li>
-            <a class="page-scroll" href="#about">About</a>
+            <a class="page-scroll" href="#about">Resume</a>
         </li>
         <li>
-            <a class="page-scroll" href="#portfolio">Portfolio</a>
+            <a class="page-scroll" href="{{{ action('HomeController@showPortfolio') }}}">Portfolio</a>
         </li>
         <li>
             <a class="page-scroll" href="#contact">Contact</a>
@@ -26,6 +26,9 @@
         @if(Auth::check())
           <li>
               <a class="page-scroll" href="{{{ action('HomeController@getLogout') }}}">Logout</a>
+          </li>
+          <li>
+            <a class="page-scroll" href="{{{ action('PostsController@managePosts') }}} ">Manager</a>
           </li>
         @else
           <li>
