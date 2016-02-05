@@ -22,7 +22,7 @@
                     <td>
                         <form action='POST' ></form>
                     </td>
-                    </tr>
+                </tr>
             </tbody>
         </table>
     </main>
