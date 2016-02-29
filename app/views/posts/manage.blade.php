@@ -1,7 +1,7 @@
 @extends('layouts.master')
 
 @section('content')
-<div class="container" ng-app='blogIndex'>
+<div class="container" >
     <main ng-controller='IndexController'>
         <table class='table table-striped'>
             <thead>
@@ -27,9 +27,4 @@
         </table>
     </main>
 </div>
-@stop
-
-@section('bottom-script')
-    <script src="/js/angular.min.js"></script>
-    <script src="/js/blogIndex.js"></script>
 @stop

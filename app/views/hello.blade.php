@@ -11,6 +11,9 @@
             </div>
         </div>
     </header>
+    
+    @include('partials.resume')
+
     <aside class="bg-dark">
         <div class="container text-center">
             <div class="call-to-action">

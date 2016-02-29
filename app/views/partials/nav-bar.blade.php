@@ -8,14 +8,14 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand page-scroll" href="#page-top"><img class='img-responsive' src="/Brand@0,25x.png" alt="JSR.Blog"></a>
+        <a class="navbar-brand page-scroll" href="{{{ action('HomeController@sayHello')}}}"><img class='img-responsive' src="/Brand@0,25x.png" alt="JSR.Blog"></a>
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav navbar-right">
         <li>
-            <a class="page-scroll" href="#about">Resume</a>
+            <a class="page-scroll" href="#resume">Resume</a>
         </li>
         <li>
             <a class="page-scroll" href="{{{ action('HomeController@showPortfolio') }}}">Portfolio</a>
