@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html ng-app='blogIndex'>
     <head>
         <meta charset='UTF-8'>
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,7 +10,7 @@
 
         <title>Jonathan Reyes's Developer Siet</title>
 
-        <link rel="stylesheet" href="/bower_components/bootstrap/dist/css/bootstrap.min.css" type="text/css">
+        <link rel="stylesheet" href="/bower_components/bootstrap-css/css/bootstrap.min.css" type="text/css">
 
         <link rel="stylesheet" href="/bower_components/normalize-css/normalize.css">
 
@@ -46,15 +46,14 @@
         
         @include('partials.footer')
 
-        <script src="/bower_components/jquery/dist/jquery.min.js"></script>
-        <script src="/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
-            <!-- Plugin JavaScript -->
-        <script src="/js/jquery.easing.min.js"></script>
-        <script src="/js/jquery.fittext.js"></script>
-        <script src="/js/wow.min.js"></script>
+        <script src="/bower_components/jquery/dist/jquery.min.js" type="text/javascript"></script>
+        <script src="/bower_components/angular/angular.min.js" type="text/javascript"></script>
+        <script src="/bower_components/angular-animate/angular-animate.js" type="text/javascript"></script>
+        <script src="/bower_components/angular-aria/angular-aria.js" type="text/javascript"></script>
+        <script src="/bower_components/angular-material/angular-material.js" type="text/javascript"></script>
+        <script src="/js/blogIndex.js"></script>
 
-        <!-- Custom Theme JavaScript -->
-        <script src="/js/creative.js"></script>
+
         
         @yield('bottom-script')
 
