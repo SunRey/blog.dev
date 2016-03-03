@@ -2,7 +2,7 @@
     "use strict";
 
     // This should be the actual name of your module
-    var app = angular.module("blogIndex", []);
+    var app = angular.module("blogIndex", ['ngMaterial']);
 
     // Find the token value from the page using jQuery
     var token = $("meta[name=csrf-token]").attr("content");
