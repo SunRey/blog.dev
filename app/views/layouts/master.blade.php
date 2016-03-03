@@ -1,31 +1,23 @@
 <!DOCTYPE html>
-<html ng-app='blogIndex'>
+<html>
     <head>
-        <meta charset='UTF-8'>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+        
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
         <meta name="description" content="Jonathan Reyes - MVC Portfolio">
         <meta name="author" content="JoNathan">
+
         <meta name="csrf-token" content="{{{ csrf_token() }}}">
 
-        <title>Jonathan Reyes's Developer Siet</title>
+        <title>Jonathan Reyes's Developer Site</title>
 
-        <link rel="stylesheet" href="/bower_components/bootstrap-css/css/bootstrap.min.css" type="text/css">
+        <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
-        <link rel="stylesheet" href="/bower_components/normalize-css/normalize.css">
-
-        {{-- <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'> --}}
-
-        {{-- <link href='http://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'> --}}
+        <link rel="stylesheet" href="/bower_components/Materialize/dist/css/materialize.min.css" type="text/css">
+        <link href="/css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
 
         <link rel="stylesheet" href="/font-awesome/css/font-awesome.min.css" type="text/css">
-
-        <!-- Plugin CSS -->
-        <link rel="stylesheet" href="/css/animate.min.css" type="text/css">
-
-        <!-- Custom CSS -->
-        <link rel="stylesheet" href="/css/creative.css" type="text/css">
-
 
         <!--[if lt IE 9]>
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
@@ -47,14 +39,8 @@
         @include('partials.footer')
 
         <script src="/bower_components/jquery/dist/jquery.min.js" type="text/javascript"></script>
-        <script src="/bower_components/angular/angular.min.js" type="text/javascript"></script>
-        <script src="/bower_components/angular-animate/angular-animate.js" type="text/javascript"></script>
-        <script src="/bower_components/angular-aria/angular-aria.js" type="text/javascript"></script>
-        <script src="/bower_components/angular-material/angular-material.js" type="text/javascript"></script>
-        <script src="/js/blogIndex.js"></script>
+        <script src="/bower_components/Materialize/dist/js/materialize.min.js" type="text/javascript"></script>
 
-
-        
         @yield('bottom-script')
 
     </body>
