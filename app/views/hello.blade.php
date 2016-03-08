@@ -7,19 +7,16 @@
         <div class="section no-pad-bot">
           <div class="container">
             <br><br>
-            <h1 class="header center blue-grey-text text-lighten-2">Hello, this is {{{ $name }}}'s MVC Blog!!!</h1>
+            <h1 class="center red-text text-accent-2" id="heavy">Hello, this is {{{ $name }}}'s MVC web application!!</h1>
             <div class="row center">
-              <h5 class="header col s12 light">This site uses the frameworks Laravel, on the back-end, and Bootstrap, on the front-end, to implement a MVC design patter as part of my learning experience at Codeup. Thank you for visiting.</h5>
-            </div>
-            <div class="row center">
-              <a href="#">Link To Angular Soon</a>
+              <h5 class="col s12 green-text text-accent-2" id="medium">This site uses Materialize and Angular on the front-end for styling and responsiveness. Also, it uses Laravel on the backend and for implemnting a MVC design patter. Look around and if you have any questions use the contact form to reach out. Thank you for visiting.</h5>
             </div>
             <br><br>
           </div>
         </div>
 
         <div class="parallax">
-            <img src="/img/php.jpg" alt="Unsplashed background-keyboard">
+            <img src="/img/keyboard.jpg" id="washout" alt="Unsplashed background-keyboard">
         </div>
     </div>
 
@@ -61,8 +58,13 @@
             <div class="container">
                 <div class="row center">
                     <h5 class="header col s12 light">
-                        @include('partials.resume')
+                        <a class="modal-trigger" href="#modal1">Resume</a>
                     </h5>
+                </div>
+            </div>
+            <div id="modal1" class="modal">
+                <div class="modal-content">
+                    @include('partials.resume')
                 </div>
             </div>
         </div>
@@ -91,12 +93,19 @@
                 </div>
             </div>
         </div>
-        <div class="parallax"><img src="/img/keyboard.jpg" alt="Unsplashed background php code"></div>
+        <div class="parallax"><img src="/img/php.jpg" id="washout" alt="Unsplashed background php code"></div>
     </div>
 </main>
 
 @stop
 
 @section('bottom-script')
-    
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('.modal-trigger').leanModal({
+                dismissable: true,
+                opcaity: .8
+            });
+        });
+    </script>
 @stop
