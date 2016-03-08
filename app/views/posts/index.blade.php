@@ -2,20 +2,24 @@
 
 @section('content')
 <div class="container">
-    <main>
+    <section>
         <div class="row">
-            <div class="col-sm-8 blog-class">
+            <div class="col s12">
                 @foreach($posts as $post)
-                    <div class="blog-post">
-                        <h2 class="blog-title"><a href="{{{ action('PostsController@show', $post->id) }}}">{{{ $post->title }}}</a></h2>
-                        <small class="">{{{ $post->created_at->format('F-d-Y') }}}</small>
-                        <p>{{{ $post->description }}}</p>
+                    <div class="card">
+                        <div class="card-content">
+                            <h2 class="card-action"><a href="{{{ action('PostsController@show', $post->id) }}}">{{{ $post->title }}}</a></h2>
+                            <small class="">{{{ $post->created_at->format('F-d-Y') }}}</small>
+                            <p>{{{ $post->description }}}</p>
+                        </div>
                     </div>
                     <br>
                 @endforeach
             </div>
         </div>
-            <ol class="breadcrumb">
+    </section>
+        @if(Auth::check())
+            <ul class="">
                 <li><a href="{{{ action('PostsController@create') }}}">Create New Posts</a></li>
                 <li>
                     <form action='#'>
@@ -23,8 +27,8 @@
                         <button type='submit' class='btn btn-primary'>Submit</button>
                     </form>
                 </li>
-            </ol>
-    </main>
-    {{ $posts->links() }}
+            </ul>
+        @endif
+    {{ $posts->links() }} </li>
 </div>
 @stop
