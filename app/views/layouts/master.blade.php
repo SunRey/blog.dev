@@ -16,8 +16,7 @@
 
         <link rel="stylesheet" href="/bower_components/Materialize/dist/css/materialize.min.css" type="text/css">
         <link href="/css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
-
-        <link rel="stylesheet" href="/font-awesome/css/font-awesome.min.css" type="text/css">
+        <link href="/css/blog.css" rel="stylesheet" type="text/css" href="">
 
         <!--[if lt IE 9]>
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
@@ -40,6 +39,7 @@
 
         <script src="/bower_components/jquery/dist/jquery.min.js" type="text/javascript"></script>
         <script src="/bower_components/Materialize/dist/js/materialize.min.js" type="text/javascript"></script>
+        <script src="/js/init.js"></script>
 
         @yield('bottom-script')
 
