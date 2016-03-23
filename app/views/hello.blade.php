@@ -9,7 +9,7 @@
             <br><br>
             <h1 class="center red-text text-accent-2" id="heavy">Hello, this is {{{ $name }}}'s MVC web application!!</h1>
             <div class="row center">
-              <h5 class="col s12 green-text text-accent-2 text-flow" id="medium">This site uses Materialize and Angular on the front-end for styling and responsiveness. Also, it uses Laravel on the backend and for implemnting a MVC design patter. Look around and if you have any questions use the contact form to reach out. Thank you for visiting.</h5>
+              <h5 class="col s12 green-text text-accent-2" id="medium">This site uses Materialize and Angular on the front-end for styling and responsiveness. Also, I used Laravel on the back-end and for implementing the MVC design pattern. Look around and if you have any questions use the contact link to reach me. Thank you for visiting.</h5>
             </div>
             <br><br>
           </div>
