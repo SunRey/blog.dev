@@ -8,12 +8,13 @@
       </div>
 
       <div class="col l3 s12">
-        <h5 class="red-text text-accent">Connect</h5>
+        <h5 class="red-text text-accent">My Work</h5>
         <ul>
           <li><a class="white-text" href="http://github.com/SunRey" target="_blank">Github</a></li>
           <li><a class="white-text" href="http://www.linkedin.com/in/jreyessatx" target="_blank">LinkedIn</a></li>
           <li><a class="white-text" href="http://furry-tail-endings.org" target="_blank">Furry-Tail Endings</a></li>
           <li><a class="white-text" href="http://sunrey.github.io/" target="_blank">GitHub-Pages</a></li>
+          <li><a class="white-text" href="http://pmgrecords.github.io/" target"_blank">PMG Records</a></li>
         </ul>
       </div>
 
