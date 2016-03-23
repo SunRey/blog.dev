@@ -7,7 +7,7 @@
         <div class="section no-pad-bot">
           <div class="container">
             <br><br>
-            <h1 class="center red-text text-accent-2" id="heavy">Hello, this is {{{ $name }}}'s MVC web application!!</h1>
+            <h1 id="lead-title" class="center teal-text text-darken-1" id="heavy">Hello, this is {{{ $name }}}'s MVC web application!!</h1>
             <div class="row center">
               <h5 class="col s12 green-text text-accent-2" id="medium">This site uses Materialize and Angular on the front-end for styling and responsiveness. Also, I used Laravel on the back-end and for implementing the MVC design pattern. Look around and if you have any questions use the contact link to reach me. Thank you for visiting.</h5>
             </div>
@@ -79,7 +79,7 @@
                     <h3><i class="mdi-content-send brown-text"></i></h3>
                     <h4>Contact Us</h4>
                     <p class="light">Please <a href="mailto:jreyes.satx@gmail.com?Subject=I%20saw%20your%20webpage!" target="_top">email me</a> if you have questions or think I could help you on a project.</p>
-                    <p class="light deep-orange-text accent-2-text">eMail Modal comming soon! :)</p>
+                    <p class="light deep-orange-text text-accent-2">eMail Modal comming soon! :)</p>
                 </div>
             </div>
 

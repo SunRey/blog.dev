@@ -19,3 +19,7 @@ main {
 #medium {
     font-weight: 400;
 }
+
+#lead-title {
+    text-shadow: 2px 2px #e0f2f1;
+}
