@@ -78,8 +78,8 @@
                 <div class="col s12 center">
                     <h3><i class="mdi-content-send brown-text"></i></h3>
                     <h4>Contact Us</h4>
-                    <p class="left-align light">Please email me if you have questions or think I could help you on a project.</p>
-                    <p class="left-align light">eMail Modal comming soon! :)</p>
+                    <p class="light">Please <a href="mailto:jreyes.satx@gmail.com?Subject=I%20saw%20your%20webpage!" target="_top">email me</a> if you have questions or think I could help you on a project.</p>
+                    <p class="light deep-orange-text accent-2-text">eMail Modal comming soon! :)</p>
                 </div>
             </div>
 
