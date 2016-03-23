@@ -9,7 +9,7 @@
             <br><br>
             <h1 class="center red-text text-accent-2" id="heavy">Hello, this is {{{ $name }}}'s MVC web application!!</h1>
             <div class="row center">
-              <h5 class="col s12 green-text text-accent-2" id="medium">This site uses Materialize and Angular on the front-end for styling and responsiveness. Also, it uses Laravel on the backend and for implemnting a MVC design patter. Look around and if you have any questions use the contact form to reach out. Thank you for visiting.</h5>
+              <h5 class="col s12 green-text text-accent-2 text-flow" id="medium">This site uses Materialize and Angular on the front-end for styling and responsiveness. Also, it uses Laravel on the backend and for implemnting a MVC design patter. Look around and if you have any questions use the contact form to reach out. Thank you for visiting.</h5>
             </div>
             <br><br>
           </div>
@@ -78,7 +78,8 @@
                 <div class="col s12 center">
                     <h3><i class="mdi-content-send brown-text"></i></h3>
                     <h4>Contact Us</h4>
-                    <p class="left-align light">Tee chuta hhat yudd! Goodness gracious me! Artoo Detoowha bo Seethreepiowha ey toota odd mischka Jabba du Hutt. I don't think they're going to let us in, Artoo. We'd better go. Artoo, wait. Oh, dear! Artoo. Artoo, I really don't think we should rush into all this. Oh, Artoo! Artoo, wait for me! Just you deliver Master Luke's message and get us out of here. Oh my! Oh! Oh, no.</p>
+                    <p class="left-align light">Please email me if you have questions or think I could help you on a project.</p>
+                    <p class="left-align light">eMail Modal comming soon! :)</p>
                 </div>
             </div>
 
