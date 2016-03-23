@@ -4,16 +4,16 @@
 
       <div class="col l6 s12">
         <h5 class="red-text text-accent">More about Me</h5>
-        <p class="grey-text text-lighten-4">With the help of a <a href="http://alexpepper.us">mentor</a>, and my time at <a href="http://codeup.com">Codeup</a> I have developed the foundational skills to change  </p>
+        <p class="grey-text text-lighten-4">With the help of a <a href="http://alexpepper.us" target="_blank">mentor</a>, and my time at <a href="http://codeup.com" target="_blank">Codeup</a> I have developed the foundational skills to change  </p>
       </div>
 
       <div class="col l3 s12">
         <h5 class="red-text text-accent">Connect</h5>
         <ul>
-          <li><a class="white-text" href="http://github.com/SunRey">Github</a></li>
-          <li><a class="white-text" href="http://www.linkedin.com/in/jreyessatx">LinkedIn</a></li>
-          <li><a class="white-text" href="http://furry-tail-endings.org">Furry-Tail Endings</a></li>
-          <li><a class="white-text" href="http://sunrey.github.io/">GitHub-Pages</a></li>
+          <li><a class="white-text" href="http://github.com/SunRey" target="_blank">Github</a></li>
+          <li><a class="white-text" href="http://www.linkedin.com/in/jreyessatx" target="_blank">LinkedIn</a></li>
+          <li><a class="white-text" href="http://furry-tail-endings.org" target="_blank">Furry-Tail Endings</a></li>
+          <li><a class="white-text" href="http://sunrey.github.io/" target="_blank">GitHub-Pages</a></li>
         </ul>
       </div>
 
