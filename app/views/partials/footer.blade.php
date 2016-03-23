@@ -14,7 +14,7 @@
           <li><a class="white-text" href="http://www.linkedin.com/in/jreyessatx" target="_blank">LinkedIn</a></li>
           <li><a class="white-text" href="http://furry-tail-endings.org" target="_blank">Furry-Tail Endings</a></li>
           <li><a class="white-text" href="http://sunrey.github.io/" target="_blank">GitHub-Pages</a></li>
-          <li><a class="white-text" href="http://pmgrecords.github.io/" target"_blank">PMG Records</a></li>
+          <li><a class="white-text" href="http://pmgrecords.github.io/" target="_blank">PMG Records</a></li>
         </ul>
       </div>
 
