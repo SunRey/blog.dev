@@ -18,8 +18,9 @@ main {
 
 #medium {
     font-weight: 400;
+    text-shadow: 1px 1px #212121;
 }
 
 #lead-title {
-    text-shadow: 2px 2px #e0f2f1;
+    text-shadow: 2px 2px #37474f;
 }
