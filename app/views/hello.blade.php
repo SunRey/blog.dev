@@ -29,7 +29,7 @@
                         <h2 class="center brown-text"><i class="material-icons">flash_on</i></h2>
                     <h5 class="center">About Me</h5>
 
-                    <p class="light">I am a native Texan and 7th generation San Antonio son. This personal page is my way of saying 'Hello, let me show you what I have been up to.' I am uaually developing it ever so carefully, piece by piece.</p>
+                    <p class="light">I am a native Texan and 7th generation San Antonio son. This personal page is my way of saying "Hello, let me show you what I have been up to." I am uaually developing it ever so carefully, piece by piece.</p>
                     </div>
                 </div>
                 <div class="col s12 m4">
@@ -77,7 +77,7 @@
             <div class="row">
                 <div class="col s12 center">
                     <h3><i class="mdi-content-send brown-text"></i></h3>
-                    <h4>Contact Us</h4>
+                    <h4>Contact Me</h4>
                     <p class="light">Please <a href="mailto:jreyes.satx@gmail.com?Subject=I%20saw%20your%20webpage!" target="_top">email me</a> if you have questions or think I could help you on a project.</p>
                     <p class="light deep-orange-text text-accent-2">eMail Modal comming soon! :)</p>
                 </div>
@@ -90,7 +90,8 @@
         <div class="section no-pad-bot">
             <div class="container">
                 <div class="row center">
-                    <h5 class="header col s12 light">A modern responsive front-end framework based on Material Design</h5>
+                    <h3 class="header col s12 light">More Coming Soon</h3>
+                    <p>Highlight up coming projects</p>
                 </div>
             </div>
         </div>
