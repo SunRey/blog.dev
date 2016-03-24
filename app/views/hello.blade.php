@@ -9,7 +9,7 @@
             <br><br>
             <h1 id="lead-title" class="center red-text accent-3-text" id="heavy">"My" MVC Web Application</h1>
             <div class="row center">
-              <h5 class="col s12 light-blue-text lighten-5-text" id="medium">I'm {{{ $name }}}, and this is my personal site. I created it using Materialize and Angular on the front-end for styling and responsiveness. Also, featuring Laravel on the back-end and for implementing an MVC design pattern. Look around and if you have any questions use the contact link to reach me. Thank you for visiting.</h5>
+              <h5 class="col s12 light-blue-text lighten-5-text" id="medium">I'm {{{ $name }}}, and this is my personal site. I created it using Materialize and Angular on the front-end for styling and responsiveness. It also features Laravel on the back-end, for implementing an MVC design pattern. Look around and if you have any questions use the contact link to reach me. Thank you for visiting.</h5>
             </div>
             <br><br>
           </div>
@@ -29,7 +29,7 @@
                         <h2 class="center brown-text"><i class="material-icons">flash_on</i></h2>
                     <h5 class="center">About Me</h5>
 
-                    <p class="light">I am a native Texan and 7th generation San Antonio son. This personal page is my way of saying "Hello, let me show you what I have been up to." I am uaually developing it ever so carefully, piece by piece.</p>
+                    <p class="light">I am a native Texan and 7th generation San Antonio son. This personal page is my way of saying "Hello, let me show you what I have been up to." It is still in development as I carefully craft it feature by feature.</p>
                     </div>
                 </div>
                 <div class="col s12 m4">
@@ -37,7 +37,7 @@
                         <h2 class="center brown-text"><i class="material-icons">group</i></h2>
                         <h5 class="center">Collaboration</h5>
 
-                        <p class="light">I have enjoyed working in small to medium sized developer groups. I am flexible enough to sometimes take lead or to support the direction of others. You can be a very gifted developer, but it takes many to build a symphony.</p>
+                        <p class="light">I enjoy working in small to medium sized groups. I feel comfotable in a lead role, but I enjoy being able to support and learn from those around me. The higher value of knowledge is the ability to share and help others with it.</p>
                     </div>
                 </div>
                 <div class="col s12 m4">
@@ -45,7 +45,7 @@
                         <h2 class="center brown-text"><i class="material-icons">settings</i></h2>
                         <h5 class="center">Always learning</h5>
 
-                        <p class="light">One of my best qualities that applies to my development career is my courisoity and passion to find answers. This has been a big factor to why coding has had usch a big appeal to me. There is so much to know, and I could never know it all.</p>
+                        <p class="light">One of my best qualities, that applies to me as a developer, is my curiosity and passion to find solutions. This has been a big factor to why coding has had such a big appeal to me, and has fosted a new passion for it. There is so much to know, and even more ways to apply it.</p>
                     </div>
                 </div>
             </div>
@@ -72,7 +72,7 @@
     </div>
 
     <div class="container">
-        <div class="section">
+        <div id="contact" class="section scrollspy">
 
             <div class="row">
                 <div class="col s12 center">
