@@ -7,7 +7,7 @@
         <div class="section no-pad-bot">
           <div class="container">
             <br><br>
-            <h1 id="lead-title" class="center red-text accent-3-text" id="heavy">"My" MVC Web Application</h1>
+            <h1 class="center red-text accent-3-text lead-title" id="heavy">"My" MVC Web Application</h1>
             <div class="row center">
               <h5 class="col s12 light-blue-text lighten-5-text" id="medium">I'm {{{ $name }}}, and this is my personal site. I created it using Materialize and Angular on the front-end for styling and responsiveness. It also features Laravel on the back-end, for implementing an MVC design pattern. Look around and if you have any questions use the contact link to reach me. Thank you for visiting.</h5>
             </div>
@@ -57,9 +57,9 @@
         <div class="section no-pad-bot">
             <div class="container">
                 <div class="row center">
-                    <h5 class="header col s12 light">
-                        <a class="modal-trigger" href="#modal1">Resume</a>
-                    </h5>
+                    <h3 class="header col s12 lead-title">
+                        <a class="modal-trigger" href="http://alumni.codeup.com/uploads/146-1457722729.pdf" target="_blank">Resume</a>
+                    </h3>
                 </div>
             </div>
             <div id="modal1" class="modal">
@@ -91,7 +91,6 @@
             <div class="container">
                 <div class="row center">
                     <h3 class="header col s12 light">More Coming Soon</h3>
-                    <p>Highlight up coming projects</p>
                 </div>
             </div>
         </div>
