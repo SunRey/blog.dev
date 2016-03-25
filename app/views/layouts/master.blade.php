@@ -16,7 +16,7 @@
 
         <link rel="stylesheet" href="/bower_components/Materialize/dist/css/materialize.min.css" type="text/css">
         <link href="/css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
-        <link href="/css/blog.css" rel="stylesheet" type="text/css" href="">
+        <link href="/css/blog.css" rel="stylesheet" type="text/css">
 
         <!--[if lt IE 9]>
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>

@@ -10,7 +10,7 @@
         <a class="page-scroll red-text accent-3-text" href="{{{ action('HomeController@sayHello')}}}#contact">Contact</a>
       </li>
       <li>
-        <a class="page-scroll red-text accent-3-text" href="{{{ action('PostsController@index') }}}">Blog</a>
+        <a class="page-scroll red-text accent-3-text" href="{{{ action('PostsController@index') }}}" hidden>Blog</a>
       </li>
 
     @if(Auth::check())
