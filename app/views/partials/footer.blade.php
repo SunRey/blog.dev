@@ -23,7 +23,7 @@
 
   <div class="footer-copyright">
     <div class="container">
-    Made by <a class="brown-text text-lighten-3" href="{{{ action('HomeController@sayHello')}}}">Jonathan Reyes</a>
+    Made by <a class="brown-text text-lighten-3" href="{{{ action('HomeController@sayHello') }}}">Jonathan Reyes</a>
     </div>
   </div>
 </footer>
