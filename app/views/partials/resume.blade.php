@@ -1,12 +1,7 @@
-<section class="valign-wrapper">
-    <div class="container valign">
-        <div class="row">
-            <div class="col s12">
-                <h5 class="header center black-text">Jonathan S. Reyes</h5>
-            </div>
-            <div class="col s12">
-                <p class="black-text"></p>
-            </div>
-        </div>
-    </div>
-</section>
+<object data="/pdf/JSR_resume.pdf" type="application/pdf" width="100%" height="100%">
+
+    <p>It appears you don't have a PDF plugin for this browser.
+    No biggie... you can <a href="/pdf/JSR_resume.pdf">click here to
+    download the PDF file.</a></p>                 
+
+</object>

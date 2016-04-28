@@ -1,13 +1,13 @@
 <nav class="blue-grey darken-3" role="navigation">
   <div class="nav-wrapper container">
-    <a id="logo-container" href="{{{ action('HomeController@sayHello')}}}" class="brand-logo"><img class='img-responsive' src="/Brand@0,25x.png" alt="JSR.Blog"></a>
+    <a id="logo-container" href="{{{ action('HomeController@sayHello')}}}" class="brand-logo"><img class='img-responsive' src="/small_logo.jpg" alt="JSR.Blog"></a>
 
     <ul class="right hide-on-med-and-down">
       <li>
         <a class="page-scroll red-text accent-3-text" href="http://alumni.codeup.com/uploads/146-1457722729.pdf" target="_blank">Resume</a>
       </li>
       <li>
-        <a class="page-scroll red-text accent-3-text" href="{{{ action('HomeController@sayHello')}}}#contact">Contact</a>
+        <a class="page-scroll red-text accent-3-text" href="#contact">Contact</a>
       </li>
       <li>
         <a class="page-scroll red-text accent-3-text" href="{{{ action('PostsController@index') }}}" hidden>Blog</a>
@@ -30,7 +30,7 @@
 
     <ul id="nav-mobile" class="side-nav blue-grey darken-3">
       <li>
-        <a class="page-scroll red-text accent-3-text" href="#resume">Resume</a>
+        <a class="page-scroll red-text accent-3-text" href="http://alumni.codeup.com/uploads/146-1457722729.pdf" target="_blank">Resume</a>
       </li>
       <li>
         <a class="page-scroll red-text accent-3-text" href="#contact">Contact</a>
