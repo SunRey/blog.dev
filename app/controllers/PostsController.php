@@ -33,11 +33,9 @@ class PostsController extends \BaseController {
 
 
 		if (Request::wantsJson()) {
-
 			$posts = $query->orderBy('created_at', 'desc')->get();
 			return Response::json($posts);
 		} else {
-
 			$posts = $query->orderBy('created_at', 'desc')->paginate(3);
 			return View::make('posts.index', array('posts' => $posts));
 		}
@@ -137,7 +135,7 @@ class PostsController extends \BaseController {
 
 			$post->title = Input::get('title');
 			$post->description = Input::get('description');
-			$post->user_id = 1; //Auth::id();
+			$post->user_id = Auth::id();
 
 
 			$result = $post->save();
@@ -161,9 +159,13 @@ class PostsController extends \BaseController {
 	public function destroy ($id)
 	{
 		$post = Post::find($id);
-		$post->delete();
-
-		return Redirect::action('posts.index');
+		$response['success'] = $post->delete() ? true : false;
+        
+        if(Request::ajax()) {
+            return Response::json($response);    
+        } else {
+            return Redirect::action('posts.index');
+        }
 	}
 
 	public function managePosts ()
