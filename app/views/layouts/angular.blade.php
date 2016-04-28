@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html ng-app='AngularBlog'>
     <head>
         <meta charset='UTF-8'>
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,14 +10,9 @@
 
         <title>Jonathan Reyes's Developer Site</title>
 
-        <link rel="stylesheet" href="/bower_components/bootstrap-css/css/bootstrap.min.css" type="text/css">
-
         <link rel="stylesheet" href="/bower_components/angular-material/angular-material.min.css" type="text/css">
 
-        <link rel="stylesheet" href="/bower_components/normalize-css/normalize.css">
-
         <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-
 
         <!--[if lt IE 9]>
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
@@ -27,25 +22,26 @@
         @yield('top-script')
 
     </head>
-    <body ng-app='blogIndex' layout="column">
+    <body ng-controller="SiteController as site" layout="column">
         @include('partials.angular-nav')
         
-        @if(Session::has('errorMessage')) 
+        @if(Session::has('errorMessage'))
             <p class="bg-danger">{{{ Session::get('errorMessage') }}}</p>
         @endif
 
         @yield('content')
-        
-        
+
+
 
         <script src="/bower_components/jquery/dist/jquery.min.js" type="text/javascript"></script>
         <script src="/bower_components/angular/angular.min.js" type="text/javascript"></script>
         <script src="/bower_components/angular-animate/angular-animate.min.js" type="text/javascript"></script>
         <script src="/bower_components/angular-aria/angular-aria.min.js" type="text/javascript"></script>
         <script src="/bower_components/angular-material/angular-material.min.js" type="text/javascript"></script>
-        <script src="/js/blogIndex.js"></script>
-
-
+        <script src="/js/module.js" type="text/javascript"></script>
+        <script src="/js/php.constant.js" type="text/javascript"></script>
+        <script src="/js/config.js" type="text/javascript"></script>
+        <script src="/js/site.controller.js" type="text/javascript"></script>
         
         @yield('bottom-script')
 

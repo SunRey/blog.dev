@@ -18,6 +18,7 @@
         <link href="/css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
         <link href="/css/blog.css" rel="stylesheet" type="text/css">
 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
         <!--[if lt IE 9]>
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
@@ -37,9 +38,11 @@
         
         @include('partials.footer')
 
-        <script src="/bower_components/jquery/dist/jquery.min.js" type="text/javascript"></script>
+        {{-- // <script src="/bower_components/jquery/dist/jquery.min.js" type="text/javascript"></script> --}}
+        <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
         <script src="/bower_components/Materialize/dist/js/materialize.min.js" type="text/javascript"></script>
         <script src="/js/init.js"></script>
+        <script src="/js/ninja.js"></script>
 
         @yield('bottom-script')
 
