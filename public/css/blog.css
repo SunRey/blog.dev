@@ -24,3 +24,8 @@ main {
 .lead-title {
     text-shadow: 2px 2px #37474f;
 }
+
+#logo-container {
+    max-width: 500px;
+    max-height: 10vh;
+}

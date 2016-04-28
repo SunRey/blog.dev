@@ -58,7 +58,7 @@
             <div class="container">
                 <div class="row center">
                     <h3 class="header col s12 lead-title">
-                        <a class="modal-trigger" href="http://alumni.codeup.com/uploads/146-1457722729.pdf" target="_blank">Resume</a>
+                        <a class="modal-trigger" href="#modal1">Resume</a>
                     </h3>
                 </div>
             </div>
@@ -72,8 +72,7 @@
     </div>
 
     <div class="container">
-        <div id="contact" class="section scrollspy">
-
+        <div class="section scrollspy" id="contact">
             <div class="row">
                 <div class="col s12 center">
                     <h3><i class="mdi-content-send brown-text"></i></h3>
@@ -82,16 +81,51 @@
                     <p class="light deep-orange-text text-accent-2">eMail Modal comming soon! :)</p>
                 </div>
             </div>
-
         </div>
     </div>
 
     <div class="parallax-container valign-wrapper">
         <div class="section no-pad-bot">
             <div class="container">
-                <div class="row center">
-                    <h3 class="header col s12 light">More Coming Soon</h3>
+                <div class="row">
+                    <div class="col s12 m6">
+
+                        <div class="card">
+                            <div class="card-image waves-effect waves-block waves-light">
+                                <img class="responsive-img activator" src="/img/furry_tail.png">
+                            </div>
+                            <div class="card-content">
+                                <span class="card-title activator grey-text text-darken-4"><a href="http://furry-tail-endings.org" target="_blank">Furry-Tail-Endings.org</a><i class="material-icons right">more_vert</i></span>
+                            </div>
+                            <div class="card-reveal">
+                                <span class="card-title grey-text text-darken-4"><i class="material-icons right">close</i></span>
+                                <div class="section">
+                                    <p class="grey-text text-darken-4">Our final group project at Codeup was creating a portal for pet fosters, that would allow for forums, events, information, and marketing, aiding them through the pet foster process. We were inspired by <a href="http://sanantoniopetsalive.com">San Antonio Pets Alive</a>, and San Antonio's "no kill" status.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col s12 m6">
+
+                        <div class="card">
+                            <div class="card-image waves-effect waves-block waves-light">
+                                <img class="responsive-img activator" src="/img/gopher_it.png">
+                            </div>
+                            <div class="card-content">
+                                <span class="card-title activator grey-text text-darken-4"><a href="http://sunrey.github.io" target="_blank">Whack-A-Mole Game</a><i class="material-icons right">more_vert</i></span>
+                            </div>
+                            <div class="card-reveal">
+                                <span class="card-title grey-text text-darken-4">My GitHub Pages<i class="material-icons right">close</i></span>
+                                <div class="section">
+                                    <p class="grey-text text-darken-4">A "whack-a-mole" style game made with vanilla JavaScript and jQuery, for a simple grid setup</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
                 </div>
+
             </div>
         </div>
         <div class="parallax"><img src="/img/php.jpg" id="washout" alt="Unsplashed background php code"></div>
@@ -103,10 +137,15 @@
 @section('bottom-script')
     <script type="text/javascript">
         $(document).ready(function(){
+            $('.scrollspy').scrollSpy();
+
             $('.modal-trigger').leanModal({
                 dismissable: true,
                 opcaity: .8
             });
+
+
+
         });
     </script>
 @stop
