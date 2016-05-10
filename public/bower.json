@@ -16,8 +16,8 @@
     "tests"
   ],
   "dependencies": {
-    "normalize-css": "normalize.css#~3.0.3",
     "Materialize": "materialize#~0.97.5",
-    "angular-material": "~1.0.6"
+    "angular-material": "~1.0.6",
+    "jquery": "~2.1.1"
   }
 }
