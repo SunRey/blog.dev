@@ -27,5 +27,6 @@ main {
 
 #logo-container {
     max-width: 500px;
-    max-height: 10vh;
+    max-height: 60px;
+    margin: 0 auto;
 }

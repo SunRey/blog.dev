@@ -7,9 +7,9 @@
         <div class="section no-pad-bot">
           <div class="container">
             <br><br>
-            <h1 class="center red-text accent-3-text lead-title" id="heavy">"My" MVC Web Application</h1>
+            <h1 class="center red-text accent-3-text lead-title" id="heavy">{{{ $name }}}</h1>
             <div class="row center">
-              <h5 class="col s12 light-blue-text lighten-5-text" id="medium">I'm {{{ $name }}}, and this is my personal site. I created it using Materialize and Angular on the front-end for styling and responsiveness. It also features Laravel on the back-end, for implementing an MVC design pattern. Look around and if you have any questions use the contact link to reach me. Thank you for visiting.</h5>
+              <h5 class="col s12 light-blue-text lighten-5-text" id="medium">This is my personal MVC web application. I created it using the frameworks Materialize and Angular, on the front-end, for styling and responsiveness. Using Laravel on the back-end, I implement an MVC design pattern. Look around and if you have any questions use the contact link to reach me. Thank you for visiting.</h5>
             </div>
             <br><br>
           </div>
