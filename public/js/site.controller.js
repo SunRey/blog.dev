@@ -1,3 +1,12 @@
-/**
- * Created by sunrey on 4/4/16.
- */
+(function() {
+    "use strict";
+    
+    angular.module('AngularBlog').controller('SiteController', SiteController);
+    
+    SiteController.inject = [];
+    
+    function SiteController() {
+        var vm = this;
+         
+    }
+})();

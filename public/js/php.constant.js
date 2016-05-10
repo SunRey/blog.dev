@@ -4,6 +4,6 @@
     var token = $("meta[name=csrf-token]").attr("content");
 
     // Set the token as an Angular constant
-    app.module('AngularBlog').constant('CSRF_TOKEN', token);
+    angular.module('AngularBlog').constant('CSRF_TOKEN', token);
 })();
 
