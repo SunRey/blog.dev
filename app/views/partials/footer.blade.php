@@ -17,6 +17,12 @@
           <li><a class="white-text" href="http://pmgrecords.github.io/" target="_blank">PMG Records</a></li>
         </ul>
       </div>
+        <div class="col l3 s12">
+            <ul class="social-icons">
+                <li><a href="" class="social-icon"><i class="fa fa-github"></i></a></li>
+                <li><a href="" class="social-icon"><i class="fa fa-linkedin"></i></a></li>
+            </ul>
+        </div>
 
     </div>
   </div>
