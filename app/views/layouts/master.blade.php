@@ -13,6 +13,7 @@
         <title>Jonathan Reyes's Developer Site</title>
 
         <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
 
         <link rel="stylesheet" href="/bower_components/Materialize/dist/css/materialize.min.css" type="text/css">
         <link href="/css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
