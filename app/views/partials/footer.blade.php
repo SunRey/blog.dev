@@ -19,8 +19,8 @@
       </div>
         <div class="col l3 s12">
             <ul class="social-icons">
-                <li><a href="" class="social-icon"><i class="fa fa-github"></i></a></li>
-                <li><a href="" class="social-icon"><i class="fa fa-linkedin"></i></a></li>
+                <li><a href="http://github.com/SunRey" target="_blank" class="social-icon"><i class="fa fa-github"></i></a></li>
+                <li><a href="http://www.linkedin.com/in/jreyessatx" target="_blank" class="social-icon"><i class="fa fa-linkedin"></i></a></li>
             </ul>
         </div>
 
