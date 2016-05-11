@@ -1,6 +1,6 @@
 <nav class="blue-grey darken-3" role="navigation">
   <div class="nav-wrapper container">
-    <a href="{{{ action('HomeController@sayHello')}}}" class="brand-logo"><img class='img-responsive' id="logo-container" src="/small_logo.jpg" alt="JSR.Blog"></a>
+    <a href="{{{ action('HomeController@sayHello')}}}" class="brand-logo"><img class='img-responsive' id="logo-container" src="/img/small_logo.jpg" alt="JSR.Blog"></a>
 
     <ul class="right hide-on-med-and-down">
       <li>
