@@ -2,16 +2,18 @@
 
 @section('content')
 <main>
-    <div id="index-banner" class="parallax-container">
+    <div id="index-banner" class="parallax-container valign-wrapper">
 
-        <div class="section no-pad-bot">
+        <div class="section no-pad-bot valign">
           <div class="container">
-            <br><br>
-            <h1 class="center red-text accent-3-text lead-title" id="heavy">{{{ $name }}}</h1>
             <div class="row center">
-              <h5 class="col s12 light-blue-text lighten-5-text" id="medium">This is my personal MVC web application. I created it using the frameworks Materialize and Angular, on the front-end, for styling and responsiveness. Using Laravel on the back-end, I implement an MVC design pattern. Look around and if you have any questions use the contact link to reach me. Thank you for visiting.</h5>
+                <div class="col s12 m4">
+                    <img src="/img/codeup-shot-sml.jpg" alt="It's me" class="circle responsive-img">
+                </div>
+                <div class="col s12 m8">
+                    <h5 class="light-blue-text lighten-5-text" id="medium">This is my personal MVC web application. I created it using the frameworks Materialize and Angular, on the front-end, for styling and responsiveness. Using Laravel on the back-end, I implement an MVC design pattern. Look around and if you have any questions use the contact link to reach me. Thank you for visiting.</h5>
+                </div>
             </div>
-            <br><br>
           </div>
         </div>
 
@@ -26,25 +28,19 @@
             <div class="row">
                 <div class="col sm12 m4">
                     <div class="icon-block">
-                        <h2 class="center brown-text"><i class="material-icons">flash_on</i></h2>
-                    <h5 class="center">About Me</h5>
-
-                    <p class="light">I am a native Texan and 7th generation San Antonio son. This personal page is my way of saying "Hello, let me show you what I have been up to." It is still in development as I carefully craft it feature by feature.</p>
+                        <h2 class="center brown-text"><i class="material-icons">account_circle</i></h2>
+                        <p class="light">I am from San Antonio, and can trace back my roots through 7 generations here. My background in is retail, customer service, and management. I look forward to leverage this knowledge in a developer environment. From my attention to detail to working well in groups, I look forward to honing my craft.</p>
                     </div>
                 </div>
                 <div class="col s12 m4">
                     <div class="icon-block">
-                        <h2 class="center brown-text"><i class="material-icons">group</i></h2>
-                        <h5 class="center">Collaboration</h5>
-
-                        <p class="light">I enjoy working in small to medium sized groups. I feel comfotable in a lead role, but I enjoy being able to support and learn from those around me. The higher value of knowledge is the ability to share and help others with it.</p>
+                        <h2 class="center brown-text"><i class="material-icons">code</i></h2>
+                        <p class="light">I am a resourceful problem solver who puts a premium on well written code. I enjoy the challenges coding has allowed me to solve, and bringing that outlook towards many aspects in my life. Helping others and learning from others goes hand in hand, and am a firm believer that together we can do more.</p>
                     </div>
                 </div>
                 <div class="col s12 m4">
                     <div class="icon-block">
-                        <h2 class="center brown-text"><i class="material-icons">settings</i></h2>
-                        <h5 class="center">Always learning</h5>
-
+                        <h2 class="center brown-text"><i class="material-icons">fingerprint</i></h2>
                         <p class="light">One of my best qualities, that applies to me as a developer, is my curiosity and passion to find solutions. This has been a big factor to why coding has had such a big appeal to me, and has fosted a new passion for it. There is so much to know, and even more ways to apply it.</p>
                     </div>
                 </div>
