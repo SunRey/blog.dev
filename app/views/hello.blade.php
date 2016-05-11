@@ -29,19 +29,19 @@
                 <div class="col sm12 m4">
                     <div class="icon-block">
                         <h2 class="center brown-text"><i class="material-icons">account_circle</i></h2>
-                        <p class="light">I am from San Antonio, and can trace back my roots through 7 generations here. My background in is retail, customer service, and management. I look forward to leverage this knowledge in a developer environment. From my attention to detail to working well in groups, I look forward to honing my craft.</p>
+                        <p class="light">I am from San Antonio, and can trace back my roots through 7 generations here. My background in is retail, customer service, and management. I look forward to leverage this knowledge in a development environment. From my attention to detail to working well in groups, I dedicated to honing my craft.</p>
                     </div>
                 </div>
                 <div class="col s12 m4">
                     <div class="icon-block">
                         <h2 class="center brown-text"><i class="material-icons">code</i></h2>
-                        <p class="light">I am a resourceful problem solver who puts a premium on well written code. I enjoy the challenges coding has allowed me to solve, and bringing that outlook towards many aspects in my life. Helping others and learning from others goes hand in hand, and am a firm believer that together we can do more.</p>
+                        <p class="light">I am a resourceful problem solver who puts a premium on well written code. I enjoy the challenges coding has allowed me to solve, and bringing that outlook towards many aspects in my life. Helping others and learning from others goes hand in hand, and I am a firm believer that together we can do more.</p>
                     </div>
                 </div>
                 <div class="col s12 m4">
                     <div class="icon-block">
                         <h2 class="center brown-text"><i class="material-icons">fingerprint</i></h2>
-                        <p class="light">One of my best qualities, that applies to me as a developer, is my curiosity and passion to find solutions. This has been a big factor to why coding has had such a big appeal to me, and has fosted a new passion for it. There is so much to know, and even more ways to apply it.</p>
+                        <p class="light">One of my best qualities, that applies to me as a developer, is my curiosity and passion to find solutions. This has been a big factor to why coding has had such a big appeal to me, and why it fosters a passion in me. There is so much to know, and even more ways to apply it.</p>
                     </div>
                 </div>
             </div>
