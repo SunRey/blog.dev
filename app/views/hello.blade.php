@@ -28,21 +28,21 @@
 
                 <div class="col sm12 m4">
                     <div class="icon-block">
-                        <h2 class="center brown-text"><i class="material-icons">account_circle</i></h2>
+                        <h3 class="center"><i class="material-icons brown-text medium">account_circle</i></h3>
                         <p class="light">I am from San Antonio, and can trace back my roots through 7 generations here. My background in is retail, customer service, and management. I look forward to leverage this knowledge in a development environment. From my attention to detail to working well in groups, I dedicated to honing my craft.</p>
                     </div>
                 </div>
 
                 <div class="col s12 m4">
                     <div class="icon-block">
-                        <h2 class="center brown-text"><i class="material-icons">code</i></h2>
+                        <h3 class="center"><i class="material-icons brown-text medium">code</i></h3>
                         <p class="light">I am a resourceful problem solver who puts a premium on well written code. I enjoy the challenges coding has allowed me to solve, and bringing that outlook towards many aspects in my life. Helping others and learning from others goes hand in hand, and I am a firm believer that together we can do more.</p>
                     </div>
                 </div>
 
                 <div class="col s12 m4">
                     <div class="icon-block">
-                        <h2 class="center brown-text"><i class="material-icons">fingerprint</i></h2>
+                        <h3 class="center"><i class="material-icons brown-text medium">fingerprint</i></h3>
                         <p class="light">One of my best qualities, that applies to me as a developer, is my curiosity and passion to find solutions. This has been a big factor to why coding has had such a big appeal to me, and why it fosters a passion in me. There is so much to know, and even more ways to apply it.</p>
                     </div>
                 </div>
@@ -62,19 +62,24 @@
             <div class="row">
 
                 <div class="col s12 m6 center">
-                    <h3><i class="material-icons brown-text medium">send</i></h3>
+                    <h3><a href="#contact-modal" class="modal-trigger"><i class="material-icons brown-text medium">send</i></a></h3>
                     <h4>Contact Me</h4>
                     <p class="light">Please <a href="mailto:jreyes.satx@gmail.com?Subject=I%20saw%20your%20webpage!" target="_top">email me</a> if you have questions or think I could help you on a project.</p>
-                    <p class="light deep-orange-text text-accent-2">eMail Modal comming soon! :)</p>
+
+                </div>
+                <div id="contact-modal" class="modal">
+                    <div class="modal-content">
+                        <p class="light deep-orange-text text-accent-2">eMail Modal comming soon! :)</p>
+                    </div>
                 </div>
 
                 <div class="col s12 m6 center">
                     <h3><i class="material-icons brown-text medium">description</i></h3>
                     <h4>
-                        <a class="modal-trigger link" href="#modal1">Resume</a>
+                        <a class="modal-trigger link" href="#resume-modal">Resume</a>
                     </h4>
                 </div>
-                <div id="modal1" class="modal">
+                <div id="resume-modal" class="modal">
                     <div class="modal-content">
                         @include('partials.resume')
                     </div>
