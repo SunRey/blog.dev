@@ -14,6 +14,7 @@
 Route::get('/', 'HomeController@sayHello');
 
 Route::get('/portfolio', 'HomeController@showPortfolio');
+Route::post('/contact_request', 'HomeController@submitContactForm');
 
 Route::get('/resume', 'HomeController@showResume');
 

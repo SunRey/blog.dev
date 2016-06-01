@@ -29,6 +29,25 @@ class HomeController extends BaseController {
 	{
 		return View::make('portfolio');
 	}
+	
+	public function submitContactForm()
+	{
+		$data = Input::all();
+
+		$rules = array(
+			'email'   => 'required|min:5',
+			'message' => 'required|min:5'
+		);
+
+		$validator = Validator::make($data, $rules);
+
+		if ($validator -> fails()) {
+			Log::info($data);
+			return Redirect::back()->withInputs()->withErrors($validator);
+		} else {
+			Mail::send();
+		}
+	}
 
 	public function myFirstView($name = 'person')
 	{
