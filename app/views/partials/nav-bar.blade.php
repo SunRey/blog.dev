@@ -4,7 +4,7 @@
 
     <ul class="right hide-on-med-and-down">
       <li>
-        <a class="page-scroll red-text accent-3-text" href="http://alumni.codeup.com/uploads/146-1457722729.pdf" target="_blank">Resume</a>
+        <a class="page-scroll red-text accent-3-text" href="http://alumni.codeup.com/uploads/146-1464886767.pdf" target="_blank">Resume</a>
       </li>
       <li>
         <a class="page-scroll red-text accent-3-text" href="#contact">Contact</a>
