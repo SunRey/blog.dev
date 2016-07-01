@@ -14,7 +14,7 @@
           <li><a class="white-text" href="http://github.com/SunRey" target="_blank">Github</a></li>
           <li><a class="white-text" href="http://furry-tail-endings.org" target="_blank">Furry-Tail Endings</a></li>
           <li><a class="white-text" href="http://sunrey.github.io/" target="_blank">Whack-a-mole game</a></li>
-          <li><a class="white-text" href="http://pmgrecords.github.io/" target="_blank">PMG Records</a></li>
+          <li><a class="white-text" href="http://pmgrecords.github.io/" target="_blank" hidden>PMG Records</a></li>
         </ul>
       </div>
         <div class="col l3 s12">
