@@ -93,4 +93,9 @@ class HomeController extends BaseController {
         Auth::logout();
         return Redirect::action('HomeController@sayHello');
     }
+
+    public function showRewrite()
+    {
+        return View::make('rewrite');
+    }
 }

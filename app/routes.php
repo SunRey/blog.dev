@@ -12,6 +12,7 @@
 */
 
 Route::get('/', 'HomeController@sayHello');
+Route::get('/rewrite', 'HomeController@showRewrite');
 
 Route::get('/portfolio', 'HomeController@showPortfolio');
 Route::post('/contact_request', 'HomeController@submitContactForm');
